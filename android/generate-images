@@ -3,8 +3,8 @@ set -ex
 
 source ../shared/images/generate-node.sh
 
-cp resources/Dockerfile-ndk.template resources/Dockerfile-ndk.template
-cat Dockerfile-node.template >> resources/Dockerfile-ndk.template
+cp Dockerfile-ndk.template resources/Dockerfile-ndk.template
+cat resources/Dockerfile-node.template >> resources/Dockerfile-ndk.template
 
 function generate_dockerfile {
   local api_level=$1
