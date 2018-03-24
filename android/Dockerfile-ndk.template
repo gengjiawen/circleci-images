@@ -1,5 +1,4 @@
 
-ENV ANDROID_NDK_HOME /opt/android-ndk
 RUN sdkmanager \
   "ndk-bundle" \
   "lldb" \
